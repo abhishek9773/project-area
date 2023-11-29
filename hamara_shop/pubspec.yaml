@@ -23,15 +23,29 @@ dependencies:
     sdk: flutter
 
 
-  
-  
+  # Utitlity Packages
+  http: ^1.1.2
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+
+
+
+  # Icons
+  iconsax: ^0.0.8
   cupertino_icons: ^1.0.2
+
+
+  # State Management
+  get: ^4.6.5
+  get_storage: ^2.1.1
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  
+
   
   
   
@@ -53,14 +67,14 @@ flutter:
   
 
   fonts:
-    - family: LeckerliOne
+    - family: Poopens
       fonts:
-       - assets: assets/fonts/LeckerliOne-Regular.ttf
+       - asset: assets/fonts/Poppins-Regular.ttf
          weight: 300
-       - assets: assts/fonts/Rubik-Bold.ttf
+       - asset: assts/fonts/Rubik-Bold.ttf
          weight: 400
-       - assets: assets/fonts/Poppins-Regular.ttf
-         weight: 300
+     
+  
   
   
   uses-material-design: true

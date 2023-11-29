@@ -21,3 +21,9 @@ samples, guidance on mobile development, and a full API reference.
 iconsex: ^0.0.8
 ## state maangement
 get: ^4.6.5
+
+
+# application fundamental:- 
+1. professional App configurations
+2. Light & Dark Theme Setup, includes buttons, textfileds , appBar, chip, and few others.
+3. Create Helper functions, Constanst & Utility Classes.
