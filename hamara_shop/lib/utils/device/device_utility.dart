@@ -1,9 +1,12 @@
 
 
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class UDeviceUtils {
   static void hideKeyboard(BuildContext context) {
@@ -50,7 +53,7 @@ class UDeviceUtils {
     return kBottomNavigationBarHeight;
   }
 
-  State double getAppBarHeight(){
+  static double getAppBarHeight(){
     return kToolbarHeight;
   }
 
@@ -74,6 +77,39 @@ class UDeviceUtils {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
   }
 
-  
-  
+  static void showStatusBar(){
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
+
+  }
+
+  static Future<bool> hasInternetConnection() async{
+    try{
+      final result = await InternetAddress.lookup('example.com');
+      return result.isNotEmpty && result[0].rawAddress.isNotEmpty;
+    } on SocketException catch(_){
+      return false;
+    }
+  }
+
+  static bool isIOS(){
+    return Platform.isIOS;
+  }
+
+  static bool isAndroid(){
+    return Platform.isAndroid;
+  }
+
+  static void launchUr(String url ) async{
+    if(await canLaunchUrlString(url)){
+      await launchUrlString(url);
+    }
+    else{
+      throw 'Could not lauch $url';
+    }
+  }
+
+
+
 }
+
+
