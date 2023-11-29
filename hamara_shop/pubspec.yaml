@@ -1,0 +1,64 @@
+name: hamara_shop
+description: "A new Flutter project."
+
+
+publish_to: 'none' 
+
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+
+
+
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  
+  
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  
+  
+  
+  
+  flutter_lints: ^2.0.0
+
+
+
+
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+    - assets/fonts/
+    
+
+  
+
+  fonts:
+    - family: LeckerliOne
+      fonts:
+       - assets: assets/fonts/LeckerliOne-Regular.ttf
+         weight: 300
+       - assets: assts/fonts/Rubik-Bold.ttf
+         weight: 400
+  
+  
+  uses-material-design: true
