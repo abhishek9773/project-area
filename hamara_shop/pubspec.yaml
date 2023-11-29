@@ -59,6 +59,8 @@ flutter:
          weight: 300
        - assets: assts/fonts/Rubik-Bold.ttf
          weight: 400
+       - assets: assets/fonts/Poppins-Regular.ttf
+         weight: 300
   
   
   uses-material-design: true
