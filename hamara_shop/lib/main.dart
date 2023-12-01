@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hamara_shop/app.dart';
-import 'package:hamara_shop/utils/theme/theme.dart';
 
 void main() {
   // Todo: Add Widgets Binding

@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class USize {
 
@@ -35,7 +34,7 @@ class USize {
 
   // Default specing between sections
   static const double defaultSpace = 24.0;
-  static const double spaceBtwItem = 16.0;
+  static const double spaceBtwItems = 16.0;
   static const double spaceBtwSections = 23.0;
 
   // Border radius

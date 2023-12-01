@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hamara_shop/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:hamara_shop/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:hamara_shop/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:hamara_shop/utils/theme/custom_themes/chip_theme.dart';
 import 'package:hamara_shop/utils/theme/custom_themes/elevated_buttom_theme.dart';
 import 'package:hamara_shop/utils/theme/custom_themes/outline_buttom_theme.dart';
 import 'package:hamara_shop/utils/theme/custom_themes/text_filed_theme.dart';
-import 'package:hamara_shop/utils/theme/custom_themes/text_theme.dart';
 
 class TAppTheme {
   TAppTheme._();

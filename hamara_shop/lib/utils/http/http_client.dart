@@ -1,6 +1,5 @@
 import 'dart:convert';
-
-import 'package:get/get.dart';
+import 'package:http/http.dart' as http;
 
 class UHttpClient {
   static const String _baseUrl =
@@ -9,20 +8,42 @@ class UHttpClient {
   // Helper method to make a GET Request
 
   static Future<Map<String, dynamic>> get(String endpoint) async {
-    final response = await http.get(Url.parse('$_baseUrl/$endpoint'));
-    return _hondleResponse(response);
+    final response = await http.get(Uri.parse('$_baseUrl/$endpoint'));
+    return _handleResponse(response);
   }
 
   static Future<Map<String, dynamic>> post(
       String endpoint, dynamic data) async {
     final response = await http.post(
       Uri.parse('$_baseUrl/$endpoint'),
-      header: {'Content-Type': 'application/json'},
+      headers: {'Content-Type': 'application/json'},
       body: json.encode(data),
     );
-    return _headleResponse(response);
+    return _handleResponse(response);
   }
 
-  // helper method to make a Put request 
-  
+  // helper method to make a Put request
+  static Future<Map<String, dynamic>> put(String endpoint, dynamic data) async {
+    final response = await http.put(
+      Uri.parse('$_baseUrl/$endpoint'),
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode(data),
+    );
+    return _handleResponse(response);
+  }
+
+  // Helper method of make a DELETE request
+  static Future<Map<String, dynamic>> delete(String endpoint) async {
+    final response = await http.delete(Uri.parse('$_baseUrl/$endpoint'));
+    return _handleResponse(response);
+  }
+
+  //Handle the HTTP response
+  static Map<String, dynamic> _handleResponse(http.Response response) {
+    if (response.statusCode == 200) {
+      return json.decode(response.body);
+    } else {
+      throw Exception('Failed to load data: ${response.statusCode}');
+    }
+  }
 }

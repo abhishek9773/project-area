@@ -28,6 +28,8 @@ dependencies:
   intl: ^0.18.1
   logger: ^2.0.1
   url_launcher: ^6.1.12
+  flutter_native_splash: ^2.3.2
+  smooth_page_indicator: ^1.1.0
 
 
 
@@ -58,7 +60,7 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/images/
+    - assets/images/on_boarding_images/
     - assets/icons/
     - assets/logos/
     - assets/fonts/
@@ -71,7 +73,7 @@ flutter:
       fonts:
        - asset: assets/fonts/Poppins-Regular.ttf
          weight: 300
-       - asset: assts/fonts/Rubik-Bold.ttf
+       - asset: assets/fonts/Rubik-Bold.ttf
          weight: 400
      
   

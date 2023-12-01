@@ -24,6 +24,16 @@ get: ^4.6.5
 
 
 # application fundamental:- 
+1. creating new project , Setup professional Folder stracture.
 1. professional App configurations
 2. Light & Dark Theme Setup, includes buttons, textfileds , appBar, chip, and few others.
 3. Create Helper functions, Constanst & Utility Classes.
+4. Login/REGISTRACTON UI/UX
+  - Native Splash Screen
+  - 3 ONBoarding Screens
+  - Register Screen With Eamil Varification & Success Screen
+  - Login Screen
+  - Forget Passworld & Reset Password.
+
+
+  
