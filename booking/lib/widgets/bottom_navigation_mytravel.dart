@@ -69,6 +69,9 @@ class _BottomNavigationMyTravelState extends State<BottomNavigationMyTravel> {
         showUnselectedLabels: true,
         elevation: 0,
 
+        //body
+        
+
       ),
     );
   }
