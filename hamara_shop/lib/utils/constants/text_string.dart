@@ -22,6 +22,7 @@ class UTexts {
   // -- Authentation From text
   static const String firstName = "First Name";
   static const String lastName = 'List Name';
+  static const String and = "and";
   static const String email = "E- mail";
   static const String password = "Password";
   static const String newPassword = "New Password";
@@ -56,6 +57,8 @@ class UTexts {
       "Congratulations! Your Account Awaits: Varify your Eamil to Start Shooping and Experience a world of Unrivaled Deals and Personalized  Offers.";
   static const String emailNotReceivedMassage =
       "Didn't get the email?  Check Your junk/span or resend it.";
-  static const String yourAccountCreatedTitle = "Your account successfully created!";
-  static const String yourAccountCreatedSubTitle = "Welcom to Your Ulitmate Shopping Destination: Your Account is Created Unleash the Joy of Seamless Online Shopping!";
+  static const String yourAccountCreatedTitle =
+      "Your account successfully created!";
+  static const String yourAccountCreatedSubTitle =
+      "Welcom to Your Ulitmate Shopping Destination: Your Account is Created Unleash the Joy of Seamless Online Shopping!";
 }

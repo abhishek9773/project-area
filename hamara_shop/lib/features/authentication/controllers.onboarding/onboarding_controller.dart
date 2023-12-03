@@ -7,31 +7,31 @@ class OnBoardingContorller extends GetxController {
 
   // Variables
   final pageController = PageController();
-  Rx<int> CurrentPageIndex = 0.obs;
+  Rx<int> currentPageIndex = 0.obs;
 
   /// Update Current Index when Page Scroll
-  void updatePageIndicator(index) => CurrentPageIndex = index;
+  void updatePageIndicator(index) => currentPageIndex = index;
 
   /// Jump  to the specific dot selecton page.
   void dotNavigationClick(index) {
-    CurrentPageIndex.value = index;
+    currentPageIndex.value = index;
     pageController.jumpTo(index);
   }
 
   /// jump to the specifc dot selected paage.
   void nextPage() {
-    if (CurrentPageIndex.value == 2) {
+    if (currentPageIndex.value == 2) {
       Get.offAll(const LoginScreen());
       
     } else {
-      int page = CurrentPageIndex.value + 1;
+      int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
     }
   }
 
   /// Uupdate current index & jump to the last page.
   void skipPage() {
-    CurrentPageIndex.value = 2;
+    currentPageIndex.value = 2;
     pageController.jumpToPage(2);
   }
 }

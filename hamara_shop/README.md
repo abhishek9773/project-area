@@ -35,5 +35,8 @@ get: ^4.6.5
   - Login Screen
   - Forget Passworld & Reset Password.
 
+# Register Screen with Email Varificaton & success Screen
+
+
 
   
