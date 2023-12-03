@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hamara_shop/features/authentication/screens/login/login.dart';
 
 class OnBoardingContorller extends GetxController {
   static OnBoardingContorller get instance => Get.find();
@@ -20,7 +21,8 @@ class OnBoardingContorller extends GetxController {
   /// jump to the specifc dot selected paage.
   void nextPage() {
     if (CurrentPageIndex.value == 2) {
-     // Get.to(LoginScreen());
+      Get.offAll(const LoginScreen());
+      
     } else {
       int page = CurrentPageIndex.value + 1;
       pageController.jumpToPage(page);
