@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hamara_shop/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:hamara_shop/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:hamara_shop/utils/constants/sizes.dart';
 import 'package:hamara_shop/utils/device/device_utility.dart';
 

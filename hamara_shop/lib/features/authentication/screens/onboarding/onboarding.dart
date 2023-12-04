@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:hamara_shop/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:hamara_shop/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:hamara_shop/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:hamara_shop/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:hamara_shop/features/authentication/screens/onboarding/widgets/onboarding_page.dart';

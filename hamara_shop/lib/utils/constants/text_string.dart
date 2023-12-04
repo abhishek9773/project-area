@@ -42,6 +42,8 @@ class UTexts {
   static const String resendEmailIn = " Resend email in";
   static const String ucontinue = "Continue";
   static const String resendEmail = "Resand Mail";
+  static const String submit = "Submit";
+  static const String done = "done";
 
   // -- Authentication Heading Text
   static const String loginTitle = "Welcom back.";
