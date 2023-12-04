@@ -3,6 +3,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:hamara_shop/features/authentication/screens/password_configuraton/forget_password.dart';
 import 'package:hamara_shop/features/authentication/screens/signup/signup.dart';
+import 'package:hamara_shop/navigation_menu.dart';
 import 'package:hamara_shop/utils/constants/sizes.dart';
 import 'package:hamara_shop/utils/constants/text_string.dart';
 import 'package:iconsax/iconsax.dart';
@@ -66,7 +67,7 @@ class ULoginFrom extends StatelessWidget {
             /// Sing  in Button
             SizedBox(
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: ()=> Get.to(()=> const NavigationMenu()),
                     child: const Text(UTexts.signIn))),
     
             const SizedBox(
