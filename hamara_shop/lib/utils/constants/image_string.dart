@@ -17,4 +17,18 @@ class UImage {
       "assets/images/on_boarding_images/hamara-line-shopping.jpg";
   static const String onBoardingImage3 =
       "assts/images/on_boarding_images/humara-line-delivery.jpg";
+
+  // -- Animations
+  static const String productsIllustration =
+      "assets/images/animations/sanny-line-workout.gif";
+  static const String productSoleIllustration =
+      "assets/images/animations/sammy-line-sale.png";
+  static const String staticSuccessIllustration =
+      "assets/images/animations/sanny-line-success.png";
+  static const String deliveredInPlaneIllustration =
+      "assets/images/animations/sanny-line-come-back-later.png";
+  static const String deliveredEmailIllustration =
+      "assets/images/animations/sanny-line-man-receives-a-mail.png";
+  static const String verifyIllustration =
+      "assets/images//animations/hamara-line-travel-backpack-with-passwport-and-air-ticket.gif";
 }

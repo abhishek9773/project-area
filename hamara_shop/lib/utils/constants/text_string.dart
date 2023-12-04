@@ -40,6 +40,8 @@ class UTexts {
   static const String varivficationCode = "VarificationCode";
   static const String resenaEmail = " Resend Email";
   static const String resendEmailIn = " Resend email in";
+  static const String ucontinue = "Continue";
+  static const String resendEmail = "Resand Mail";
 
   // -- Authentication Heading Text
   static const String loginTitle = "Welcom back.";

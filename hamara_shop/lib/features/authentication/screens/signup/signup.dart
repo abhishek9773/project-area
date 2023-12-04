@@ -15,7 +15,7 @@ class SignupScreen extends StatelessWidget {
         appBar: AppBar(),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(USize.defaultSpace),
+            padding: const EdgeInsets.all(USize.defaultSpace),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

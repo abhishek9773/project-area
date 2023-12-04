@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:hamara_shop/features/authentication/screens/signup/widgets/signup.dart';
+import 'package:hamara_shop/features/authentication/screens/signup/signup.dart';
 import 'package:hamara_shop/utils/constants/sizes.dart';
 import 'package:hamara_shop/utils/constants/text_string.dart';
 import 'package:iconsax/iconsax.dart';

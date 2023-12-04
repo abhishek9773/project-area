@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:hamara_shop/features/authentication/screens/signup/verify_email.dart';
 import 'package:hamara_shop/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
 import 'package:hamara_shop/utils/constants/sizes.dart';
 import 'package:hamara_shop/utils/constants/text_string.dart';
@@ -81,7 +84,7 @@ class USignupFrom extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {}, child: const Text(UTexts.createAccount)),
+                onPressed: ()=> Get.to(() =>const  VerifyEmailSreen()), child: const Text(UTexts.createAccount)),
           )
         ],
       ),
