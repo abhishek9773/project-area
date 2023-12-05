@@ -28,6 +28,7 @@ class UHomeAppBar extends StatelessWidget {
         ],
       ),
       actions:  [UCartCounterIcon(onPressed:(){}, iconColor:UColor.white)],
+
     );
   }
 }
